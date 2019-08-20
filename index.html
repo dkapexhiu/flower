@@ -1,7 +1,26 @@
-@extends('_layouts.master')
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	  <meta name="description" content="My responsive blog" />
+	  <meta name="author" content="danielkapexhiu.com">
+	  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+	  <meta charset="utf-8">
+	  <meta itemprop="name" content="Responsive blog">
+	  <meta itemprop="image" content="/assets/images/icon.png">
+	  <meta name="mobile-web-app-capable" content="yes">
+	  <meta id="theme-color" name="theme-color" content="#307699">
+	  <link rel="manifest" href="assets/build/manifest-mix.json">
 
-@section('body')
-  <header>
+	  <base target="_blank">
+
+	  <title>My responsive blog: picture story</title>
+
+	  <link rel="icon" sizes="192x192" href="assets/images/icon.png">
+	  <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
+	  <link rel="stylesheet" href="assets/build/css/main.css">
+    </head>
+    <body>
+          <header>
       <svg id="logo" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <title>Responsive logo</title>
         <path d="M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69zM12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6zm0-10c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z"></path>
@@ -13,9 +32,9 @@
     <h1>My responsive blog</h1>
 
     <picture id="banner">
-      <source media="(min-width: 750px)" srcset="/assets/images/still_life-1600_large_2x.jpg 2x, /assets/images/still_life-800_large_1x.jpg 1x"  />
-      <source media="(min-width: 500px)" srcset="/assets/images/still_life_medium.jpg" />
-      <img src="/assets/images/still_life_small.jpg" alt="Vase, fruit bowl and other objects on a cupboad">
+      <source media="(min-width: 750px)" srcset="assets/images/still_life-1600_large_2x.jpg 2x, assets/images/still_life-800_large_1x.jpg 1x"  />
+      <source media="(min-width: 500px)" srcset="assets/images/still_life_medium.jpg" />
+      <img src="assets/images/still_life_small.jpg" alt="Vase, fruit bowl and other objects on a cupboad">
     </picture>
 
     <section id="post">
@@ -26,9 +45,9 @@
 
       <figure>
         <picture>
-          <source media="(min-width: 750px)" srcset="/assets/images/horses-1600_large_2x.jpg 2x, /assets/images/horses-800_large_1x.jpg" />
-          <source media="(min-width: 500px)" srcset="/assets/images/horses_medium.jpg" />
-          <img src="/assets/images/horses_small.jpg" alt="Horses in Hawaii">
+          <source media="(min-width: 750px)" srcset="assets/images/horses-1600_large_2x.jpg 2x, assets/images/horses-800_large_1x.jpg " />
+          <source media="(min-width: 500px)" srcset="assets/images/horses_medium.jpg" />
+          <img src="assets/images/horses_small.jpg" alt="Horses in Hawaii">
         </picture>
         <figcaption>Horses in Hawaii</figcaption>
       </figure>
@@ -37,9 +56,9 @@
 
       <figure>
         <picture>
-          <source media="(min-width: 750px)" srcset="/assets/images/volt-1600_large_2x.jpg 2x, assets/images/volt-800_large_1x.jpg 1x"  />
-          <source media="(min-width: 500px)" srcset="/assets/images/volt_medium.jpg" />
-          <img src="/assets/images/volt_small.jpg" alt="Volt sign in old Berlin power station">
+          <source media="(min-width: 750px)" srcset="assets/images/volt-1600_large_2x.jpg 2x, assets/images/volt-800_large_1x.jpg 1x"  />
+          <source media="(min-width: 500px)" srcset="assets/images/volt_medium.jpg" />
+          <img src="assets/images/volt_small.jpg" alt="Volt sign in old Berlin power station">
         </picture>
         <figcaption>Sign in old Berlin power station</figcaption>
       </figure>
@@ -59,4 +78,5 @@
     </div>
 
   </footer>
-@endsection
+    </body>
+</html>
